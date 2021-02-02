@@ -5,9 +5,15 @@ module lab_002_partb (
   output F
 );
 
-  /* put your variable declarations here */
+  wire A_not;
+  wire A_not_B;
+  wire B_C;  
 
+  not N1 ( A_not, A );
 
-  /* put your gate instances here */
+  and A1 ( A_not_B, A_not, B );
+  and A2 ( B_C, B, C );
+
+  or O1 ( F, A_not_B, B_C );
 
 endmodule
