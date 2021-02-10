@@ -3,4 +3,6 @@ module lab_003_partb (
   output F
 );
 
+  assign F = ((~G) | D);
+
 endmodule
