@@ -1,0 +1,16 @@
+module proj001 (
+  input rst_n, clock,
+  input [3:0] d_in,
+  input [1:0] op,
+  input capture,
+  output valid,
+  output [4:0] result
+);
+`protected
+    MTI!#CWGA3j's,\{,lHAQQHB*e#H$mHoUr,>V7@[m}/"[aBkA<Kr_E?7A<,[,paDDosIF+6glu1z
+    n^r*gK5vBTDB!HGX<5Ela\li!q.[@Ap"A,A<Bx!]s3uR,xo_T$1R{OWzUss1F=B}*{&#Cta7o*=v
+    GWVEio|kInT}Yx^7#mJI<v]I5T7xl\w\*ER=J*-{A][!}Wn67Vr}=\+CIvXC0$7JKWC-Tt^1_<Ur
+    3#/8oD[=:!RIu61R7<mrvo[m_W2}AVEjw#qYjZ<[isowpEZwlzmZVp[=ju!LI1JC<O+Z\g=HsJ\{
+    [Q7+*m_WA=Ws@DY%ItR!}s3>]'-7
+`endprotected
+endmodule
