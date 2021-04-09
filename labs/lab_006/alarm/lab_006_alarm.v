@@ -8,21 +8,21 @@ module lab_006_alarm (
   always @* begin
     if( alarm_set ) begin
       if ( alarm_stay && (windows || doors) ) begin
-        secure <= 0;
-	alarm <= 1;
+        secure <= 1'b0;
+	alarm <= 1'b1;
       end
       else if ( windows ) begin
-	secure <= 0;
-	alarm <= 1;
+	secure <= 1'b0;
+	alarm <= 1'b1;
       end
       else begin
-	secure <= 1;
-	alarm <= 0;
+	secure <= 1'b1;
+	alarm <= 1'b0;
       end
     end
     else begin
-      secure <= 0;
-      alarm <= 0;
+      secure <= 1'b0;
+      alarm <= 1'b0;
     end
   end
 
