@@ -5,12 +5,12 @@ module lab_006_acc (
 );
 
   always @( posedge clock ) begin
-    if( !rst_n ) begin
+    if( !rst_n )
       d_out <= 0;
-    end
-    
-    // fill out the rest
-
+    else if( d_in > 4'b0110 )
+      d_out <= d_out + d_in;
+    else
+      d_out <= d_out;
   end
 
 endmodule
