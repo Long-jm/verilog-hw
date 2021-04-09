@@ -17,6 +17,13 @@ module lab_006_alarm_tb;
     alarm
   );
 
+  initial begin
+    $display( $time, ": set stay Ds Ws S A" );
+    $display( $time, ": ------------------" );
+    $monitor( $time, ":  %1b   %1b  %2b %3b %1b %1b", alarm_set, 
+			alarm_stay, doors, windows, secure, alarm);
+  end
+
   // break out the value of concat to
   // the input signals
   assign { alarm_set, alarm_stay, doors, windows } = concat;
