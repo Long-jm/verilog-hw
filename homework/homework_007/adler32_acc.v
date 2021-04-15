@@ -5,9 +5,9 @@ module adler32_acc (
 );
 
   reg [15:0] Aold, Bold;
-  wire [15:0] Anew, Bnew, Mod;
+  wire [15:0] Anew, Bnew;
   
-  assign Mod = 16'd65521;
+  localparam Mod = 16'd65521;
 
   assign Anew = ((Aold + data) > Mod) ? ((Aold + data) - Mod) : (Aold + data);
   assign Bnew = ((Anew + Bold) > Mod) ? ((Anew + Bold) - Mod) : (Anew + Bold);

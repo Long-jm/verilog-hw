@@ -1,7 +1,7 @@
 module adler32_acc_hello_tb();
 
   reg rst_n, clk;
-  reg [7:0] data;
+  wire [7:0] data;
   wire [31:0] checksum;
 
   wire done;
